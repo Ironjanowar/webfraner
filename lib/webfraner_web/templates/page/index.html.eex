@@ -1,0 +1,36 @@
+<div class="container">
+  <div class="row refran-container">
+    <button id="copy-to-clipboard" class="btn btn-info"><i class="fa fa-clipboard"></i></button>
+    <div id="refran-text">
+      <%= @refran["refran"] %>
+    </div>
+    <button type="button" id="refresh-button" class="btn btn-success btn-lg">
+      <i class="fas fa-redo-alt"></i>
+    </button>
+  </div>
+
+  <div class="row">
+
+  </div>
+
+  <div class="row">
+    <div id="info" class="info-hidden"><i>Text coppied to clipboard</i></div>
+  </div>
+
+  <div class="row refran-info">
+    <ul>
+      <li>
+        <b>Significado:</b> <%= @refran["significado"] %>
+      </li>
+      <li>
+        <b>Tipo:</b> <%= @refran["tipo"] %>
+      </li>
+      <li>
+        <b>Ideas clave:</b> <%= @refran["ideas_clave"] %>
+      </li>
+      <li>
+        <b>Marcador de use:</b> <%= @refran["marcador_de_uso"] %>
+      </li>
+    </ul>
+  </div>
+</div>
